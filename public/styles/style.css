@@ -43,7 +43,7 @@ h3 {
   font-weight: 400;
 }
 
-.comments__form {
+.container {
   display: grid;
   place-items: center;
 }
@@ -117,4 +117,31 @@ textarea {
   list-style: none;
   font-size: 0.8rem;
   max-width: 20rem;
+}
+
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.45);
+  opacity: 0.8;
+}
+
+dialog {
+  max-height: 200px;
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  border: 1px solid #8a888f;
+  background-color: #fefefe;
+  box-shadow: 5px 5px 15px -4px #000000;
+}
+
+.error__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#close-dialog {
+  border: none;
+  background-color: transparent;
+  color: #5c5b5a;
+  cursor: pointer;
 }

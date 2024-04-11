@@ -9,8 +9,8 @@
       <h3>system with MongoDB</h3>
     </div>
 
-    <div class="comments__form">
-      <form action="/comments" method="post">
+    <div class="container">
+      <form id="comments-form">
         <div class="form__item">
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required />
@@ -29,5 +29,13 @@
       <button class="btn load" id="load-btn">Load Comments</button>
       <div id="comments-container"></div>
     </div>
+    <dialog>
+      <div class="error__heading">
+        <p><strong>Error</strong></p>
+
+        <button id="close-dialog" autofocus>&#88;</button>
+      </div>
+      <p id="error-description"></p>
+    </dialog>
   </body>
 </html>
