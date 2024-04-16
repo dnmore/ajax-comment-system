@@ -4,18 +4,18 @@ Commenting system built with Node.js, AJAX and MongoDB database.
 
 ## Features
 
-- Submit content and comments which will be displayed without page reload
+- Submit comments which will be displayed without page reload
 - Submitted comments will be stored and retrieved in and from MongoDB Database
 
 
 ## Stack
 
-- Node.js
-- Express.js
-- EJS
-- AJAX
-- MongoDB
-- Nodemon
+- `node.js` JavaScript runtime environment
+- `express.js` web framework for node.js
+- `EJS` embedded JavaScript templating
+- `ajax` required for comments fetching and displaying without a full page reload
+- `mongodb` may be replaced by `mongoose`
+- `nodemon` tool automatically restarting the node application when changes are detected
 
 ## Database 
 
@@ -34,6 +34,16 @@ You can [clone the repository](https://docs.github.com/en/repositories/creating-
 $ npm install
 
 ```
+
+You can run the following command to start the application
+
+```
+$ npm start
+
+```
+
+The server will be running on port 3000, visit `http://localhost:3000/`
+
 ## License
 
 MIT
