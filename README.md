@@ -1,49 +1,51 @@
 # Commenting System
-
-Commenting system built with Node.js, AJAX and MongoDB database.
+## Overview
+A Node.js-based commenting system that allows users to submit comments asynchronously using AJAX. Comments are stored and retrieved from MongoDB.
 
 ## Features
 
-- Submit comments which will be displayed without page reload
-- Submitted comments will be stored and retrieved in and from MongoDB Database
+- Submit comments without page reload using AJAX
+- Store and retrieve comments from MongoDB
 
 
-## Stack
+## Tech Stack
 
-- `node.js` JavaScript runtime environment
-- `express.js` web framework for node.js
-- `EJS` embedded JavaScript templating
-- `ajax` required for comments fetching and displaying without a full page reload
-- `mongodb` may be replaced by `mongoose`
-- `nodemon` tool automatically restarting the node application when changes are detected
+- `Node.js`– Backend framework
+- `Express.js`– Web framework for Node.js
+- `EJS`– Templating engine for dynamic content
+- `AJAX`– For asynchronous data submission
+- `MongoDB`– NoSQL database
+- `Nodemon`– Automatically restarts server upon changes
 
-## Database 
+## Database Setup
 
-Database named `commenting-system`, you can create it on Mongo Shell with the following command 
+Create a MongoDB database named  `commenting-system`:
 
 ```
 use commenting-system
 
 ```
 
-## Cloning
+## Getting Started
+### Installation
 
-You can [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) and install the dependencies with the following command
+Clone the repository and install the dependencies:
 
 ```
+git clone https://github.com/dnmore/ajax-comment-system.git
 $ npm install
 
 ```
-
-You can run the following command to start the application
+### Running the Application
+To start the server, use:
 
 ```
 $ npm start
 
 ```
 
-The server will be running on port 3000, visit `http://localhost:3000/`
+The server will be running at `http://localhost:3000/`
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
