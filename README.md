@@ -32,7 +32,7 @@ use commenting-system
 Clone the repository and install the dependencies:
 
 ```
-git clone https://github.com/dnmore/ajax-comment-system.git
+$ git clone https://github.com/dnmore/ajax-comment-system.git
 $ npm install
 
 ```
