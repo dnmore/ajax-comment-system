@@ -1,4 +1,3 @@
-const loadButton = document.getElementById("load-btn");
 const commentsContainer = document.getElementById("comments-container");
 const commentsForm = document.getElementById("comments-form");
 const commentName = document.getElementById("name");
@@ -25,14 +24,14 @@ async function saveComment(event) {
     });
 
     if (response.ok) {
+      commentsForm.reset()
       fetchComments();
     } else {
       errorDescription.textContent = "Could not send comment!";
       dialog.showModal();
     }
   } catch (error) {
-    errorDescription.textContent =
-      "Could not send request - try again later!";
+    errorDescription.textContent = "Could not send request - try again later!";
     dialog.showModal();
   }
 }
@@ -42,7 +41,8 @@ function displayComments(comments) {
   for (const comment of comments) {
     const commentCard = document.createElement("li");
     commentCard.innerHTML = `
-        <p><strong>${comment.name}</strong> - ${comment.comment} </p>
+        <h3><strong>${comment.name}</strong></h3>
+        <p>${comment.comment}<p>
                 `;
     commentsList.appendChild(commentCard);
   }
@@ -67,7 +67,7 @@ async function fetchComments() {
     } else {
       const emptyMessage = document.createElement("p");
       emptyMessage.textContent =
-        "We could not find any comments yet. Be the first one to add one!";
+        "We could not find any comments yet. Be the first to add one!";
       commentsContainer.appendChild(emptyMessage);
     }
   } catch (error) {
@@ -81,4 +81,4 @@ dialogButton.addEventListener("click", () => {
 });
 
 commentsForm.addEventListener("submit", saveComment);
-loadButton.addEventListener("click", fetchComments);
+fetchComments();
