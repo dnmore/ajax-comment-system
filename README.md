@@ -2,6 +2,8 @@
 ## Overview
 A seamless, asynchronous commenting system built with Node.js to enhance user engagement without page reloads. Designed for smooth user interaction, this application stores and retrieves comments efficiently from MongoDB, creating a responsive and enjoyable user experience.
 
+![Preview](/ajax__comment__screenshot.PNG)
+
 ## 🚀 Features
 
 - Asynchronous comment submission with AJAX for a smooth user experience
